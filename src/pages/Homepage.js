@@ -15,6 +15,12 @@ const useStyles = makeStyles((theme) => ({
     HomeMainContent: {
         border: "1px solid black",
     },
+    UnderConstructionContainer: {
+        
+    },
+    UnderConstruction: {
+        textAlign: "center",
+    }
 }));
 
 function Homepage () {
@@ -25,7 +31,9 @@ const classes = useStyles();
         <div>
             <Container className={classes.HomeContainer}>
                 <Typography variant="h2" className={classes.HomeTitle}>Welcome to Chaepnaya Programming</Typography>
-                <br/>
+            </Container>
+            <Container className={classes.UnderConstructionContainer}>
+                <Typography variant="h3" className={classes.UnderConstruction}>Excuse the appearance of this website as it is still under construction!</Typography>
             </Container>
         </div>
     );
