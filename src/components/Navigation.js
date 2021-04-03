@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import Homepage from '../pages/Homepage';
+import AboutMe from '../pages/AboutMe';
 import Projects from '../pages/Projects';
 import TwitchTV from '../pages/TwitchTV';
 
@@ -95,7 +96,7 @@ function Navigation () {
                         <Homepage/>
                     </Route>
                     <Route exact path="/about-me">
-                        
+                        <AboutMe/>
                     </Route>
                     <Route exact path="/projects">
                         <Projects/>

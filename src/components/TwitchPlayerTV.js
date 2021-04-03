@@ -5,10 +5,12 @@ import { TwitchEmbed, TwitchChat, TwitchClip, TwitchPlayer } from 'react-twitch-
 
 const useStyles = makeStyles((theme) => ({
     TwitchFeed: {
-        marginLeft: "15%",
-        marginTop: "5%",
-        alignItems: "center",
+           
     },
+    TwitchLivePlayer: {
+        display: "block",
+        margin: "0 auto",
+    }
 }))
 
 function TwitchPlayerTV () {
@@ -24,6 +26,7 @@ function TwitchPlayerTV () {
                     theme="dark"
                     muted
                     onVideoPause={() => console.log('Video paused...')}
+                    className={classes.TwitchLivePlayer}
                 />
             </Container>
         </div>

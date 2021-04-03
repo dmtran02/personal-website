@@ -1,0 +1,61 @@
+AboutMeDiv: {
+        backgroundColor: '#262424',
+        paddingTop: '12rem',
+        paddingBottom: '15rem',
+    },
+    AboutMeContainer: {
+        textAlign: 'center',
+    },
+    AboutMeHeaderText: {
+        fontFamily: 'Open Sans, sans-serif',
+        fontWeight: 'bold',
+        letterSpacing: '3px',
+        margin: '0, auto 18px auto',
+        color: '#a00dbd',
+        textShadow: '0px 1px 3px rgb(0 0 0 / 80%)',
+    },
+    AboutMeSubText: {
+        color: 'white',
+        fontFamily: 'Open Sans, sans-serif',
+        fontWeight: 'bold',
+    },
+    AboutMeCategory: {
+        paddingTop: '2rem',
+    },
+    AboutMeImage: {
+        borderRadius: '50%',
+        border: '1px solid #a00dbd',
+        height: 'auto',
+        width: 'auto',
+    },
+    AboutMeInfoContainer: {
+        display: 'block',
+        marginBlockStart: '2em',
+        marginBlockEnd: '2em',
+        marginInlineStart: '0px',
+        marginInlineEnd: '0px',
+        textAlign: 'left',
+    },
+    AboutMeInfoText: {
+        color: '#f2f2f2',
+        fontFamily: 'Open Sans, sans-serif',
+    }
+
+    // Projects.js
+    
+    <Typography variant="h2" className={classes.ProjectsTitle}>Projects</Typography>
+                {
+                    projects.map(({title, description, picture}) => (
+                        <Card variant="outlined" className={classes.ProjectsCard}>
+                            <CardContent>
+                                <Typography variant="h3" color="textPrimary" className={classes.ProjectsCardTitle}>{title}</Typography>
+                                <br/>
+                                <img src={picture} alt="image" className={classes.ProjectsImage}/>
+                                <br/>
+                                <hr className={classes.ProjectsLine}/>
+                                <br/>
+                                <Typography variant="h6">{description}</Typography>
+                            </CardContent>
+                        </Card>
+                    ))
+                }
